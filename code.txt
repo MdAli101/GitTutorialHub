@@ -1,0 +1,15 @@
+What to do if we wanna unstag our files.
+    git restore --staged delete_now.txt
+
+if we somehow working and we foundt that oh no we have deleted one of the most
+important file so, what is the backup:
+    Backup is that we can unmodify our file by doing:
+        git checkout -- delete_now.txt  //this code will insert the data of file of the last commited one.
+        (you will insert your files name here)
+
+if we have modified gitignore and than checked it out by the code git checkout -- gitignore.txt
+than it won't restore it because it's a git privacy feature.
+
+if we have done a lot of coding and than we have to goto our previous code/commit
+than we will run :
+    git checkout -f
